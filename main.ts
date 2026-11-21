@@ -3,7 +3,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const JOKE =
-  "The AI writes the code, reviews its own code, and approves its own pull request; I'm just the human it keeps around to get paged at 3 a.m. when it breaks.";
+  "The AI writes the code, reviews its own code, and merges its own pull request; I'm just the human it keeps around to be woken at 3 a.m. when it breaks.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", JOKE + "\n", "utf8");
